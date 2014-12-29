@@ -40,7 +40,7 @@ debug = Debug("zombie")
 
 # Browser options you can set when creating new browser, or on browser instance.
 BROWSER_OPTIONS   = ["features", "headers", "htmlParser", "waitDuration",
-                     "proxy", "referer", "silent", "site", "strictSSL", "userAgent",
+                     "proxy", "agent", "referer", "silent", "site", "strictSSL", "userAgent",
                      "maxRedirects", "language", "runScripts", "localAddress"]
 
 # Supported browser features.

@@ -565,12 +565,15 @@ Resources.makeHTTPRequest = (request, callback)->
     cookies = @cookies
     request.headers.cookie = cookies.serialize(hostname, pathname)
 
+    console.log request.url
+    
     httpRequest =
       method:         request.method
       url:            request.url
       headers:        request.headers
       body:           request.body
       multipart:      request.multipart
+      agent:          @agent
       proxy:          @proxy
       jar:            false
       followRedirect: false
